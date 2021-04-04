@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!--Used to tell the browser that it is a html document-->
+<html lang="en"> <!--Used to define start of html file-->
+    <head>
+        <meta charset="utf-8"> <!--Used to put information of site-->
+        <title>Tags and thier definitions</title> <!--Shows title at the top of page-->
+    </head>
+    <body> <!--Defines the body of a html file-->
+        <div> <!--Defines a division in the body-->
+            <h1>This is a very big title</h1> <!--title of a page, goes from h1 to h6-->
+            <p>Hello from the other side</p> <!--Paragraph tag-->
+            <span>This is part of a span</span> <!--doesnt do anything, differentiates for styling purposes?-->
+        </div>
+
+        <div>
+            <ul> <!--Define an unordered list-->
+                <li>Element 1 in unordered</li> <!--Define an element in the list-->
+                <li>Element 2 in unordered</li>
+                <li>Element 3 in unordered</li>
+            </ul>
+        </div>
+
+        <div>
+            <ol> <!--Define an ordered list-->
+                <li>Element 1 in ordered</li>
+                <li>Element 2 in unordered</li>
+                <li>Element 3 in unordered</li>
+            </ol>
+        </div>
+
+        <!-- use &lt; for <-->
+        <!-- use &gt; for <-->
+        <!-- use &amp; for <-->
+        <!-- use &copy; for copyright symbol-->
+        <!-- use &nbsp; for non breaking space. it stops the space from wordwrapping-->
+        <!-- use &quot; for quote-->
+
+        <div>
+            <a href="tags.html"> <!--Create hyperlinks to html files using directories (relative/absolute)-->
+                Go to same page
+            </a>
+            <br> <!--Creates a line break-->
+            <a href="http://www.youtube.com" target="_blank" title="Click here"> 
+                <!--Create hyperlink to url. blank target opens new tab. setting a title will show when you hover over it-->
+                Go to youtube
+            </a> <br>
+            <a href="#sectionplace"> <!--Creates hyperlink to some other tag that has an id same as href, without the #-->
+                Go to Section
+            </a>
+            <section id="sectionplace">Hello from section</section> <!--Creates sections-->
+        </div>
+    </body>
+</html>
