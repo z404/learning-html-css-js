@@ -3,25 +3,75 @@
     <head>
         <meta charset="utf-8"> <!--Used to put information of site-->
         <title>Tags and thier definitions</title> <!--Shows title at the top of page-->
+        <!--Adding CSS styling to HTML-->
+        <!--Can be used by elements, classes or ids-->
+        <style> 
+            p{ /*Has a selector part (p), a property (color) and a value (blue). property + value = declaration*/
+                /*P here is an element*/
+                color: blue; 
+                font-size: 20px;
+                width: 500px;
+            }
+            h1{
+                color: green;
+                font-size: 36px;
+                text-align: center;
+            }
+            .turq, li span{
+                /*li > span signifies a selector that finds any span that is a direct child of li*/
+                /*li span signifies a selector that finds any span that is a child of li (all these can be used with classes and ids)*/
+                /*turq here is a class. defined with a .*/
+                /*Check unordered element 2*/
+                color: turquoise;
+            }
+            #thisisanid, .green, p.change{ /*Can combine 2 for same style*/
+                /*thisisanid here is an id. defined with a #*/
+                /* Here, p.change is any p tag with change as its class*/
+                /*Check span element*/
+                color: rgb(60, 221, 20);
+            }
+            ul > li{/*Removing dots on an unordered list*/
+                list-style: none;
+            }
+            a:link, a:visited{/*if there is a link, apply these styles (pseudoselectors)*/
+                text-decoration: none;
+                background-color: yellow;
+                border: 1px solid blue;
+                color: black;
+                display: block;
+                width: 200px;
+                text-align: center;
+                margin-bottom: 1px;
+            }
+            a:hover, a:active{/*If mouse hovers over link, apply these styles*/
+                background-color: red;
+                color: purple;
+                cursor: pointer;
+
+            }
+            li:nth-child(odd){/*select nth selector odd numbers. normal numbers can also be passed*/
+                font-size: 24px;
+            }
+        </style>
     </head>
     <body> <!--Defines the body of a html file-->
         <div> <!--Defines a division in the body-->
             <h1>This is a very big title</h1> <!--title of a page, goes from h1 to h6-->
-            <p>Hello from the other side</p> <!--Paragraph tag-->
-            <span>This is part of a span</span> <!--doesnt do anything, differentiates for styling purposes?-->
+            <p class="change">Hello from the other side</p> <!--Paragraph tag-->
+            <span id="thisisanid">This is part of a span</span> <!--differentiates for styling purposes. added style with id-->
         </div>
 
         <div>
             <ul> <!--Define an unordered list-->
                 <li>Element 1 in unordered</li> <!--Define an element in the list-->
-                <li>Element 2 in unordered</li>
+                <li class="turq">Element 2 in unordered</li> <!--Added CSS class turq. many classes can be added with a space-->
                 <li>Element 3 in unordered</li>
             </ul>
         </div>
 
         <div>
             <ol> <!--Define an ordered list-->
-                <li>Element 1 in ordered</li>
+                <li><span>Element 1 in ordered</span></li>
                 <li>Element 2 in unordered</li>
                 <li>Element 3 in unordered</li>
             </ol>
