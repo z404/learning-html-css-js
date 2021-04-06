@@ -1,0 +1,72 @@
+@media (max_width: 767px){
+    p{
+        text-align: right;
+    }
+}
+* {
+    box-sizing: border-box;
+}
+body{
+    margin: 0 115px 115px 115px;
+    padding: 15px;
+    /* background-image: url("MYPICTURE.jpg"); 
+       background-repeat: no-repeat;
+       background-position: bottom; */
+}
+p{ /*Has a selector part (p), a property (color) and a value (blue). property + value = declaration*/
+    /*P here is an element*/
+    color: blue; 
+    font-size: 20px;
+    width: 500px;
+    border: 15px solid gold;
+}
+h1{
+    color: green;
+    /* font-size: 36px; */
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.turq, li span{
+    /*li > span signifies a selector that finds any span that is a direct child of li*/
+    /*li span signifies a selector that finds any span that is a child of li (all these can be used with classes and ids)*/
+    /*turq here is a class. defined with a .*/
+    /*Check unordered element 2*/
+    color: turquoise;
+    font-size: 2em; /*Relative Sizing of text*/
+}
+#thisisanid, .green, p.change{ /*Can combine 2 for same style*/
+    /*thisisanid here is an id. defined with a #*/
+    /* Here, p.change is any p tag with change as its class*/
+    /*Check span element*/
+    color: rgb(60, 221, 20);
+}
+ul > li{/*Removing dots on an unordered list*/
+    list-style: none;
+}
+a:link, a:visited{/*if there is a link, apply these styles (pseudoselectors)*/
+    text-decoration: none;
+    background-color: yellow;
+    border: 1px solid blue;
+    color: black;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+a:hover, a:active{/*If mouse hovers over link, apply these styles*/
+    background-color: red;
+    color: purple !important; /*Overrides any other style for color, and applies this*/
+    cursor: pointer;
+
+}
+li:nth-child(odd){/*select nth selector odd numbers. normal numbers can also be passed*/
+    font-size: 24px;
+}
+
+/* CSS gives that property to the element that was defined last, as it is sequential
+if there is no conflict, it merges both the definitions
+When applied to a tag, all children of the tag also get the same style
+specificity: style, id, class, number of elements*/
