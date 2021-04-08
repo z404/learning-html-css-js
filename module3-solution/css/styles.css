@@ -1,0 +1,38 @@
+* {
+    font-family: 'Kiwi Maru', serif;
+}
+
+#header-nav {
+    background-color: grey;
+    border-radius: 0;
+    border: 0;
+}
+
+div.navbar-brand {
+    padding: 0;
+}
+
+div.navbar-brand>h1 {
+    color: black;
+    margin-top: 10px;
+}
+
+.container {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#collapsable-nav {
+    background: white;
+    border-top: 0;
+}
+
+#nav-list {
+    margin-top: 0;
+}
+
+li {
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+}
