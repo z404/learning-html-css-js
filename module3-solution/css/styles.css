@@ -36,3 +36,22 @@ li {
     border: 1px solid black;
     background-color: white;
 }
+
+.navbar-default .navbar-toggle,
+.icon-bar {
+    border: 2px solid black;
+}
+
+#body-header {
+    font-size: 2.2em;
+    font-weight: 900;
+}
+
+#titleforchicken {
+    font-size: large;
+    font-weight: 900;
+}
+
+#chickentile {
+    background-color: grey;
+}
